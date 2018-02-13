@@ -1,0 +1,22 @@
+{
+  "name": "accueil-ragt",
+  "version": "1.0.0",
+  "description": "page d'accueil ragt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruuddekorte/accueil-ragt.git"
+  },
+  "author": "Ilham, Vanessa, David, Ruud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruuddekorte/accueil-ragt/issues"
+  },
+  "homepage": "https://github.com/ruuddekorte/accueil-ragt#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
