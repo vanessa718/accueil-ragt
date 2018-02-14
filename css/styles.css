@@ -29,9 +29,10 @@ main {
 }
 
 section {
-    min-height: 600px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    padding-left: 20px;
     margin-bottom: 20px;
-    background-color: rgba(255,255,255, 0.2);
 }
 
 footer {
@@ -43,6 +44,15 @@ footer {
 
 
 
+/*    CLASSES ADAPTEE */
+
+.h600px {
+    min-height: 600px;
+}
+
+.btnup {
+    background: rgba(200, 200, 200, 0.3);
+}
 
 
 
