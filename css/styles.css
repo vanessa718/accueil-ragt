@@ -56,6 +56,42 @@ footer {
 
 
 
+/*       CLASSES CARD PORTAIL RAGT      */
+
+.card {
+    width: 300px;
+    height: 230px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.card_image {
+    width: 300px;
+    height: 200px;  
+    background: rgba(180,180,200, 0.6);
+    overflow: hidden;
+}
+.card_image img {
+    width: 300px;
+    height: 200px; 
+}
+
+.card_text {
+    width:  300px;
+    height: 30px;
+    font-size: 1,2em;
+    color: #000000;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
 /*    CLASSES FOR TESTING     */
 
 .pink {
