@@ -128,5 +128,5 @@ footer {
     padding: 2px 16px;
 }*/
 .row{
-    justify-content: space-between;
+    justify-content: space-around;
 }
