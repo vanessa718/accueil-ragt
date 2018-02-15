@@ -1,5 +1,5 @@
 /* ##### basic HTML5 tags ##### */
-/*                              */
+
 body {
     font-size: 18px;
     margin: 0;
@@ -22,6 +22,8 @@ nav {
     background-color: #191900;
     /* ##### warm dark-grey ##### */
     font-weight: bold;
+    z-index: 200;
+    /* z-index 200 places navigation bar on top over everything else */
 }
 
 main {
@@ -41,7 +43,6 @@ footer {
     background-color: #333;
     color: #DDD;
 }
-
 
 
 /*    CLASSES ADAPTEE */
@@ -67,28 +68,30 @@ footer {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card_image {
     width: 300px;
-    height: 200px;  
-    background: rgba(180,180,200, 0.6);
+    height: 200px;
+    background: rgba(180, 180, 200, 0.6);
     overflow: hidden;
 }
+
 .card_image img {
     width: 300px;
-    height: 200px; 
+    height: 200px;
 }
 
 .card_text {
-    width:  300px;
+    width: 300px;
     height: 30px;
-    font-size: 1,2em;
+    font-size: 1, 2em;
     color: #000000;
     text-align: center;
     overflow: hidden;
 }
+
 
 
 
@@ -114,20 +117,25 @@ footer {
 
 
 
+
 /*           SIEGE SOCIAL     */
 
-.card:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.bourran{
+
+.bourran {
     width: 300px;
     height: 200px;
-    background: rgba(180,180,200, 0.6);
+    background: rgba(180, 180, 200, 0.6);
     overflow: hidden;
 }
+
+
 /*.container{
     padding: 2px 16px;
 }*/
-.row{
+
+.row {
     justify-content: space-around;
 }
