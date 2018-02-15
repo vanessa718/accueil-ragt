@@ -42,12 +42,8 @@ $('a[href*="#"]')
   });
 
 // ####### END SMOOTH SCROLLING #######
-
-
-
-
-
-
-
 })();
 
+// ####### FUNCTION IMAGE RANDOM #######
+  document.getElementById('imageAleatoire').style.backgroundImage = "url(img/background/image" + Math.round(Math.random()*11+1) +".jpg)"; 
+// ####### END FUNCTION IMAGE RANDOM #######
