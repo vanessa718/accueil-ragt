@@ -46,6 +46,36 @@ $('a[href*="#"]')
 
 
 
+//#######  STARTS change BACKGROUND with season #######/////
+
+var currentTime = new Date();
+var month = currentTime.getMonth() + 1;
+var total = month;
+
+// var total = Date().getMonth() + 1;
+var imagebackground = "../img/glenn-carstens-peters-112923.jpg"
+
+console.log(total);
+
+
+// Summer
+if (total >= 6 && total <= 8) { imagebackground="../img/background/summer/cé.jpg"; };
+// Autumn
+if (total >= 9 && total <= 11) { imagebackground="../img/background/autumn/leaf.jpg"; };
+// Winter
+if (total == 12 || total <= 2) { imagebackground="../img/background/winter/roman-kraft-508148.jpg"; };
+// Spring
+if (total >= 2 && total <= 6) { imagebackground="../img/background/spring/daisies.jpg"; };
+
+console.log("'"+imagebackground+ "'");
+
+document.body.style.backgroundImage = url("'"+imagebackground+ "'");
+
+ 
+ 
+
+
+
 
 
 

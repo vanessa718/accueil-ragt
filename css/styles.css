@@ -124,9 +124,22 @@ footer {
     background: rgba(180,180,200, 0.6);
     overflow: hidden;
 }
-/*.container{
-    padding: 2px 16px;
-}*/
 .row{
     justify-content: space-around;
 }
+
+
+/*     BACKGROUND SEASON     */
+/*.bgspring{
+    background-image: url(img/spring/daisies.jpg);
+}
+.bgsummer{
+    background-image: url(img/summer/cé.jpg);
+}
+.bgautumn{
+    background-image: url(img/autumn/leaf.jpg);
+}
+.bgwinter{
+    background-image: url(caleb-george-4);
+}
+*/
