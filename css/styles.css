@@ -35,11 +35,42 @@ footer {
     background-color: #333;
     color: #DDD;
 }
- 
-h4 {
-    color: white;
+
+li{
+    list-style: none;
 } 
 
+
+/*CLASSES CARD NEWS*/
+
+.card_news {
+    width: 300px
+    height: 200px;
+    font-size: 1em;
+    color: #000000;
+}
+
+.card_news_main {
+    width: 350px;
+    height: 520px;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+    background-color: rgba(180,180,180,0.5);   
+}
+
+.card_news_link {
+    text-align: center;
+}
+
+.image_news {
+    height: 200px;
+    width: 300px;
+}
+
+.news_padding {
+    padding-left: 10px;
+}
 
 
 /*    CUSTOM CLASSES     */
@@ -48,70 +79,6 @@ h4 {
     min-height: 600px;
 }
 
-.btnup {
-    background: rgba(200, 200, 200, 0.3);
-}
-
-a.highlightlink {
-    color: rgba(100,100,255,.7);
-}
-
-
-
-/*      STICKY HEADER POSITION    */
-
-.sticky.is-sticky {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
-
-
-
-/*      FLOATING "BACK TO TOP" BUTTON    */
-
-#toTop {
-    position: fixed;
-    bottom: 95px;
-    right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#toTop .fa {
-    margin-right: 5px;
-}
-
-
-/*     CUSTOMIZED NAVIGATION ELEMENTS         */
-
-nav {
-    height: 50px;
-    min-height: 85px;
-    background-color: #191900;
-    /* ##### warm dark-grey ##### */
-    font-weight: bold;
-    z-index: 1000;
-}
-
-.nav-item {
-    background-color: #191900;
-    /* ##### warm dark-grey ##### */
-}
-
-.nav-elem .container-fluid {
-    margin: 0;
-}
-
-@media (max-width: 980px) {
-    .nav-item {
-        padding-left: 2em;
-        padding right: 2em;
-    }
-}
 
 
 /*       CLASSES CARD PORTAIL RAGT AND OTHER SECTIONS      */
@@ -151,5 +118,64 @@ nav {
     color: #000000;
     text-align: center;
     overflow: hidden;
+}
+
+
+/*      STICKY HEADER POSITION    */
+
+
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+
+
+/*      FLOATING "BACK TO TOP" BUTTON    */
+
+#toTop {
+    position: fixed;
+    bottom: 95px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#toTop .fa {
+    margin-right: 5px;
+}
+
+
+/*     CUSTOMIZED NAVIGATION ELEMENTS         */
+
+nav {
+    height: 50px;
+    min-height: 85px;
+    background-color: #191900;
+    /* ##### warm dark-grey ##### */
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.nav-item {
+    background-color: #191900;
+    /* ##### warm dark-grey ##### */
+}
+
+.nav-elem .container-fluid {
+    margin: 0;
+}
+
+@media (max-width: 980px) {
+    .nav-item {
+        padding-left: 2em;
+        padding right: 2em;
+    }
 }
 
