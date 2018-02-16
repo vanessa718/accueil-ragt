@@ -40,7 +40,10 @@ footer {
     background-color: #333;
     color: #DDD;
 }
-
+ 
+h4 {
+    color: white;
+} 
 
 
 /*    CLASSES ADAPTEE */

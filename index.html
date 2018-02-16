@@ -4,7 +4,7 @@
 <head>
     <title>Page d'accueil Intranet RAGT</title>
     <meta charset="utf-8">
-    <!-- ####### linked CSS files ####### -->
+    <!-- ####### LINKED CSS FILES ####### -->
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -14,7 +14,7 @@
 <!-- ####### ADD 'ID' ATTRIBUTE FOR RANDOM BACKGROUND IMAGES WHEN REFRESH PAGE ####### -->
 <body id="imageAleatoire" > 
     <a name="a_top"></a>
-    <!-- ####### 0. ENTETE DE PAGE AVEC LOGO RAGT ####### -->
+    <!-- ####### 0. HEADER WITH LOGO RAGT ####### -->
     <header>
         <div class="row">
             <div class="col-sm-3">&nbsp;
@@ -26,13 +26,12 @@
             </div>
         </div>
     </header>
-    <!-- ####### 0. BAR DE NAVIGATION OU MENU DE NAVIGATION ####### -->
+    <!-- ####### 1. MENU BAR ####### -->
     <!-- # add "disabled" to LI CLASS 2 block link with stopsign  # -->
     <nav class="navbar navbar-toggleable-md navbar-inverse">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <a class="navbar-brand" href="#">RAGT Intranet</a>  -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -51,7 +50,7 @@
                     <a class="nav-link" href="#a_documents-ged">DOCUMENTS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="news.html" >NEWS</a>
+                    <a class="nav-link" href="#a_accueil-news" >NEWS</a>
                 </li>
             </ul>
             <!--        ####### Search field, great idea for future use #######             
@@ -78,25 +77,106 @@
     </nav>
     <!-- ####### MAIN CONTENT ####### -->
     <main>
-        <!-- ####### 1 SECTION # ACCUEIL & NEWS ####### -->
+        <!-- ####### 2. SECTION # ACCUEIL & NEWS ####### -->
         <a name="a_accueil-news"></a>
         <section>
             <div class="row">
                 <div class="col-sm-12 h600px">
                     <h1>NEWS</h1>
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
+                        <!-- ####### NAV BAR NEWS  ####### -->
+                        <nav class="navbar navbar-toggleable-md navbar-inverse">
+                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <h4>CATÉGORIES</h4>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">GÉNÉRALES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">RESSOURCES HUMAINES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">D.S.I</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">SPORTS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- ####### END NAV BAR NEWS ####### -->
+                        <!-- ####### BLOCK NEWS####### -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <a href="#">
+                                        <div class="card_image">
+                                            <img src="img/ged/01_semences.jpeg" class="    link_image">
+                                        </div>
+                                        <div class="card_text">
+                                            <h5>GÉNÉRALES</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, magni, enim. Molestiae, a veritatis magnam adipisci aperiam rem possimus ut ducimus. Laudantium tempore similique eos veniam, id quaerat fuga porro.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <a href="#">
+                                        <div class="card_image">
+                                            <img src="img/ged/02_plateau-central.jpg" class="    link_image">
+                                        </div>
+                                        <div class="card_text">
+                                            <h5>R.H</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, esse nobis cumque enim officia fuga voluptate veniam aspernatur, nemo sequi non veritatis quaerat soluta repellendus cupiditate ex nulla, harum! Eligendi.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <a href="#">
+                                        <div class="card_image">
+                                            <img src="img/ged/03_juridique.jpg" class="    link_image">
+                                        </div>
+                                        <div class="card_text">
+                                            <h5>D.S.I</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum deserunt, fugit ratione veritatis nam, eaque magni ullam eos, est, id sit culpa consectetur possimus. Aliquid consectetur doloremque obcaecati esse sint.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <a href="#">
+                                        <div class="card_image">
+                                            <img src="img/ged/04_ged.jpeg" class="    link_image">
+                                        </div>
+                                        <div class="card_text">
+                                            <h5>SPORTS</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, corporis quis mollitia natus! Corporis veritatis numquam id illo dolores, hic ducimus, consequatur cum ipsa, dolorum fugit perspiciatis esse non vero.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ####### END BLOCK NEWS ####### -->
                 </div>
+                <!-- ####### RETURN SWITCH UP NEWS####### -->
                 <div class="col-sm-12 text-right">
                     <a href="#a_top">
                         <button class="btnup"><i class="fa fa-level-up fa-2x"></i></button>
                     </a>
                 </div>
+                <!-- ####### END RETURN SWITCH UP NEWS ####### -->
             </div>
         </section>
-        <!-- ####### 2 SECTION # PORTAIL RAGT ####### -->
+        <!--####### 2. END SECTION NEWS####### -->
+        <!-- ####### 3. SECTION # PORTAL RAGT ####### -->
         <a name="a_portail-ragt"></a>
         <section>
             <div class="row">
@@ -184,7 +264,7 @@
                 </div>
             </div>
         </section>
-        <!-- ####### 3. SECTION # SIEGE SOCIAL ####### -->
+        <!-- ####### 4. SECTION # SIEGE SOCIAL ####### -->
         <a name="a_siege-social-bourran"></a>
         <section>
             <div class="row">
@@ -249,7 +329,7 @@
                 </div>
             </div>
         </section>
-        <!-- ####### 4. SECTION # COMMUNICATION IRP ####### -->
+        <!-- ####### 5. SECTION # COMMUNICATION IRP ####### -->
         <a name="a_communication-irp"></a>
         <section>
             <div class="row">
@@ -301,7 +381,7 @@
                 </div>
             </div>
         </section>
-        <!-- ####### 5. SECTION # RH - RESSOURCES HUMAINES ####### -->
+        <!-- ####### 6. SECTION # RH - RESSOURCES HUMAINES ####### -->
         <a name="a_rh-ressources-humaines"></a>
         <section>
             <div class="row">
@@ -353,7 +433,7 @@
                 </div>
             </div>
         </section>
-        <!-- ####### 6. SECTION # DOCUMENTS / GED ####### -->
+        <!-- ####### 7. SECTION # DOCUMENTS / GED ####### -->
         <a name="a_documents-ged"></a>
         <section>
             <div class="row">
@@ -419,7 +499,7 @@
         </section>
     </main>
     <!-- ####### END OF MAIN CONTENT ####### -->
-    <!-- ####### 9. FOOTER ####### -->
+    <!-- ####### 8. FOOTER ####### -->
     <a name="a_footer"></a>
     <footer>
         <div class="row">
@@ -436,8 +516,8 @@
     </footer>
     <!-- ####### JAVASCRIPTS ####### -->
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="node_modules/underscore/underscore-min.js"></script>
-    <!--     <script type="text/javascript" src="node_modules/ajax/lib/ajax.js"></script> -->
+    <!-- <script type="text/javascript" src="node_modules/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="node_modules/ajax/lib/ajax.js"></script> -->
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 
