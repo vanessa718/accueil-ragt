@@ -17,14 +17,6 @@ header {
     text-align: center;
 }
 
-nav {
-    height: 50px;
-    min-height: 85px;
-    background-color: #191900;
-    /* ##### warm dark-grey ##### */
-    font-weight: bold;
-}
-
 
 main {
     margin: 30px;
@@ -45,7 +37,9 @@ footer {
 }
 
 
-/*    CLASSES ADAPTEE    */
+
+
+/*    CUSTOM CLASSES     */
 
 .h600px {
     min-height: 600px;
@@ -55,7 +49,13 @@ footer {
     background: rgba(200, 200, 200, 0.3);
 }
 
-/*    sticky header position    */
+a.highlightlink {
+    color: rgba(100,100,255,.7);
+}
+
+
+
+/*      STICKY HEADER POSITION    */
 
 .sticky.is-sticky {
     position: fixed;
@@ -66,14 +66,51 @@ footer {
     width: 100%;
 }
 
+
+
+/*      FLOATING "BACK TO TOP" BUTTON    */
+
+#toTop {
+    position: fixed;
+    bottom: 95px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#toTop .fa {
+    margin-right: 5px;
+}
+
+
+/*     CUSTOMIZED NAVIGATION ELEMENTS         */
+
+nav {
+    height: 50px;
+    min-height: 85px;
+    background-color: #191900;
+    /* ##### warm dark-grey ##### */
+    font-weight: bold;
+}
+
 .nav-item {
     background-color: #191900;
     /* ##### warm dark-grey ##### */
-/*    padding-left: 2em;
-    padding right: 2em;     */
 }
 
-/*       CLASSES CARD PORTAIL RAGT      */
+.nav-elem .container-fluid {
+    margin: 0;
+}
+
+@media (max-width: 980px) {
+    .nav-item {
+        padding-left: 2em;
+        padding right: 2em;
+    }
+}
+
+
+/*       CLASSES CARD PORTAIL RAGT AND OTHER SECTIONS      */
 
 .card {
     width: 300px;
@@ -85,6 +122,10 @@ footer {
     margin-right: auto;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card_image {
@@ -110,6 +151,15 @@ footer {
 
 
 
+/*.container{
+    padding: 2px 16px;
+}*/
+
+
+/*.row {
+    justify-content: space-around;
+}
+*/
 
 
 /*    CLASSES FOR TESTING     */
@@ -128,30 +178,4 @@ footer {
 
 .impair {
     background-color: green;
-}
-
-
-
-
-
-/*           SIEGE SOCIAL     */
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.bourran {
-    width: 300px;
-    height: 200px;
-    background: rgba(180, 180, 200, 0.6);
-    overflow: hidden;
-}
-
-
-/*.container{
-    padding: 2px 16px;
-}*/
-
-.row {
-    justify-content: space-around;
 }

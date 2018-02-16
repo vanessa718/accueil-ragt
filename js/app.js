@@ -33,6 +33,32 @@ $(document).ready(function() {
     });
 });
 
+// Sticky TOP button
+// =================
+$(document).ready(function(){
+      // "Back to top" for english version, "Haut de page" for french version
+      $('body').append('<div id="toTop" class="btn btn-info"><i class="fa fa-arrow-up"></i>Haut de page</div>');
+      $(window).scroll(function () {
+      if ($(this).scrollTop() != 0) {
+        $('#toTop').fadeIn();
+      } else {
+        $('#toTop').fadeOut();
+      }
+    }); 
+    $('#toTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+    // Snippet from Thomas [16 h 49]
+    // $(‘[href^=“#”]’).click(function() {
+    //      $(“html, body”).animate({ scrollTop: 0 }, “slow”);
+    //      return false;
+    //    }
+    //  });
+});
+
+
+
 // ####### Native browser smooth scrolling with jQuery              #######
 // ####### https://css-tricks.com/snippets/jquery/smooth-scrolling  #######
 
