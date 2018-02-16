@@ -151,6 +151,12 @@ li{
     margin-right: 5px;
 }
 
+.btn-back {
+  color: #fff;
+  background-color: #008D58;
+  border-color: #008D58;
+}
+
 
 /*     CUSTOMIZED NAVIGATION ELEMENTS         */
 
