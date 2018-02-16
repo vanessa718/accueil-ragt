@@ -40,44 +40,50 @@ $('a[href*="#"]')
       }
     }
   });
-
 // ####### END SMOOTH SCROLLING #######
 
 
+// ####### FUNCTION IMAGE RANDOM #######
+//  document.getElementById('imageAleatoire').style.backgroundImage = "url(img/background/image" + Math.round(Math.random()*11+1) +".jpg)"; 
+// ####### END FUNCTION IMAGE RANDOM #######
 
 
 //#######  STARTS change BACKGROUND with season #######/////
 
-var currentTime = new Date();
-var month = currentTime.getMonth() + 1;
-var total = month;
 
-// var total = Date().getMonth() + 1;
-var imagebackground = "../img/glenn-carstens-peters-112923.jpg"
+//https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript
+var month = new Date().getMonth();
+var season = 'spring';
+var months = month+2;
 
-console.log(total);
+if (month>=13) {
+  month = 1;
+}
 
+switch (month){
+  //december, january, february 
+  case 1:
+  case 2:
+  case 3:
+    season = "winter";
+    break;
 
-// Summer
-if (total >= 6 && total <= 8) { imagebackground="../img/background/summer/cé.jpg"; };
-// Autumn
-if (total >= 9 && total <= 11) { imagebackground="../img/background/autumn/leaf.jpg"; };
-// Winter
-if (total == 12 || total <= 2) { imagebackground="../img/background/winter/roman-kraft-508148.jpg"; };
-// Spring
-if (total >= 2 && total <= 6) { imagebackground="../img/background/spring/daisies.jpg"; };
+  //june, july, august
+  case 7:
+  case 8:
+  case 9:
+    season = "summer";
+    break; 
 
-console.log("'"+imagebackground+ "'");
+  //september, october, november
+  case 10:
+  case 11:
+  case 12:
+    season = "autumn";
+    break;        
+}
 
-document.body.style.backgroundImage = url("'"+imagebackground+ "'");
+document.body.style.backgroundImage = "url(img/background/"+ season + "/img_" + Math.round(Math.random()*3+1) + ".jpg)";
 
  
- 
-
-
-
-
-
-
 })();
-
