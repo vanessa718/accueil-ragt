@@ -1,8 +1,9 @@
 /* ##### basic HTML5 tags ##### */
-/*                              */
+
 body {
     font-size: 18px;
     margin: 0;
+    min-height: 1200px;
     background-color: #E8EDEC;
     /*  ##### white-grey with slight blue tint #####  */
     background-repeat: no-repeat;
@@ -16,12 +17,6 @@ header {
     text-align: center;
 }
 
-nav {
-    height: 50px;
-    background-color: #191900;
-    /* ##### warm dark-grey ##### */
-    font-weight: bold;
-}
 
 main {
     margin: 30px;
@@ -78,18 +73,15 @@ li{
 }
 
 
-/*    CLASSES ADAPTEE */
+/*    CUSTOM CLASSES     */
 
 .h600px {
     min-height: 600px;
 }
 
-.btnup {
-    background: rgba(200, 200, 200, 0.3);
-}
 
 
-/*CLASSES CARD PORTAIL RAGT*/
+/*       CLASSES CARD PORTAIL RAGT AND OTHER SECTIONS      */
 
 .card {
     width: 300px;
@@ -100,72 +92,89 @@ li{
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card_image {
     width: 300px;
-    height: 200px;  
-    background: rgba(180,180,200, 0.6);
+    height: 200px;
+    background: rgba(180, 180, 200, 0.6);
     overflow: hidden;
 }
 
+.card_image img {
+    width: 300px;
+    height: 200px;
+}
+
 .card_text {
-    width:  300px;
+    width: 300px;
     height: 30px;
-    font-size: 1,2em;
+    font-size: 1, 2em;
     color: #000000;
     text-align: center;
     overflow: hidden;
 }
 
 
-/*CLASSES FOR TESTING*/
+/*      STICKY HEADER POSITION    */
 
-.pink {
-    background-color: pink;
-}
 
-.green {
-    background-color: green;
-}
-
-.pair {
-    background-color: pink;
-}
-
-.impair {
-    background-color: green;
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 
-/*SIEGE SOCIAL*/
 
-.card:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.bourran{
-    width: 300px;
-    height: 200px;
-    background: rgba(180,180,200, 0.6);
-    overflow: hidden;
-}
-.row{
-    justify-content: space-around;
+
+/*      FLOATING "BACK TO TOP" BUTTON    */
+
+#toTop {
+    position: fixed;
+    bottom: 95px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
 
-/*     BACKGROUND SEASON     */
-/*.bgspring{
-    background-image: url(img/spring/daisies.jpg);
+#toTop .fa {
+    margin-right: 5px;
 }
-.bgsummer{
-    background-image: url(img/summer/cé.jpg);
+
+
+/*     CUSTOMIZED NAVIGATION ELEMENTS         */
+
+nav {
+    height: 50px;
+    min-height: 85px;
+    background-color: #191900;
+    /* ##### warm dark-grey ##### */
+    font-weight: bold;
 }
-.bgautumn{
-    background-image: url(img/autumn/leaf.jpg);
+
+.nav-item {
+    background-color: #191900;
+    /* ##### warm dark-grey ##### */
 }
-.bgwinter{
-    background-image: url(caleb-george-4);
+
+.nav-elem .container-fluid {
+    margin: 0;
 }
-*/
+
+@media (max-width: 980px) {
+    .nav-item {
+        padding-left: 2em;
+        padding right: 2em;
+    }
+}
+
