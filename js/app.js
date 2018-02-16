@@ -40,10 +40,50 @@ $('a[href*="#"]')
       }
     }
   });
-
 // ####### END SMOOTH SCROLLING #######
-})();
+
 
 // ####### FUNCTION IMAGE RANDOM #######
-  document.getElementById('imageAleatoire').style.backgroundImage = "url(img/background/image" + Math.round(Math.random()*11+1) +".jpg)"; 
+//  document.getElementById('imageAleatoire').style.backgroundImage = "url(img/background/image" + Math.round(Math.random()*11+1) +".jpg)"; 
 // ####### END FUNCTION IMAGE RANDOM #######
+
+
+//#######  STARTS change BACKGROUND with season #######/////
+
+
+//https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript
+var month = new Date().getMonth();
+var season = 'spring';
+var months = month+2;
+
+if (month>=13) {
+  month = 1;
+}
+
+switch (month){
+  //december, january, february 
+  case 1:
+  case 2:
+  case 3:
+    season = "winter";
+    break;
+
+  //june, july, august
+  case 7:
+  case 8:
+  case 9:
+    season = "summer";
+    break; 
+
+  //september, october, november
+  case 10:
+  case 11:
+  case 12:
+    season = "autumn";
+    break;        
+}
+
+document.body.style.backgroundImage = "url(img/background/"+ season + "/img_" + Math.round(Math.random()*3+1) + ".jpg)";
+
+ 
+})();
