@@ -24,9 +24,9 @@ main {
 
 section {
     background-color: rgba(255, 255, 255, 0.2);
-    padding-top: 20px;
-    padding-left: 20px;
-    margin-bottom: 20px;
+    padding: 40px; 
+    margin: 40px;
+    margin-top: 80px;
 }
 
 footer {
@@ -162,7 +162,7 @@ li{
 
 nav {
     height: 50px;
-    min-height: 85px;
+    min-height: 70px;
     background-color: #191900;
     /* ##### warm dark-grey ##### */
     font-weight: bold;
