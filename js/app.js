@@ -138,7 +138,7 @@ switch (month){
     break;        
 }
 
-document.body.style.backgroundImage = "url(img/background/"+ season + "/img_" + Math.round(Math.random()*3+1) + ".jpg)";
+document.body.style.backgroundImage = "url(img/background/"+ season + "/img_" + Math.round(Math.random()*2) + ".jpg)";
 
 // 
 // ####### END FUNCTION SEASON BACKGROUND #######
