@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
- 
+
 <head>
     <title>Page d'accueil Intranet RAGT</title>
     <meta charset="utf-8">
-    <!-- ####### linked CSS files ####### -->
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ####### LINKED CSS FILES ####### -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--     <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
+<!-- ####### ADD 'ID' ATTRIBUTE FOR RANDOM BACKGROUND IMAGES WHEN REFRESH PAGE ####### -->
 
-<body>
+<body id="imageAleatoire">
     <a name="a_top"></a>
-    <!-- ####### 0. ENTETE DE PAGE AVEC LOGO RAGT ####### -->
+    <!-- ####### 0. HEADER WITH LOGO RAGT ####### -->
     <header>
         <div class="row">
             <div class="col-sm-3">&nbsp;
@@ -24,193 +26,434 @@
             </div>
         </div>
     </header>
-    <!-- ####### 0. BAR DE NAVIGATION OU MENU DE NAVIGATION ####### -->
-    <!-- # add "disabled" to LI CLASS 2 block link with stopsign  # -->
-    <nav class="navbar navbar-toggleable-md navbar-inverse">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- <a class="navbar-brand" href="#">RAGT Intranet</a>  -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#a_portail-ragt">PORTAIL RAGT<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#a_siege-social-bourran">SIEGE SOCIAL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#a_communication-irp">IRP</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#a_rh-ressources-humaines">RH</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#a_documents-ged">DOCUMENTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#a_accueil-news">NEWS</a>
-                </li>
-            </ul>
-            <!--        ####### Search field, great idea for future use #######             
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
--->
-            <ul class="navbar-nav ml-auto navbar-right">
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#"><i class="fa fa-key"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> MES APPLICATIONS </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#"> <i class="fa fa-key"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> ASSISTANCE INFORMATIQUE</a>
-                </li>
-            </ul>
+    <!-- ####### 1. MENU BAR ####### -->
+    <nav class="navbar nav-elem navbar-expand-lg top-navbar navbar navbar-toggleable-md  navbar-inverse" data-toggle="sticky-onscroll">
+        <div class="container-fluid">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end navbar-inverse" id="navbarSupportedContent">
+                <ul class="navbar-nav pull-right navbar-inverse">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#a_portail-ragt">PORTAIL RAGT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a_siege-social-bourran">SIEGE SOCIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a_communication-irp">IRP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a_rh-ressources-humaines">RH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a_documents-ged">DOCUMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a_accueil-news">NEWS</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link highlightlink" href="#">MES APPLICATIONS</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link highlightlink" href="#">ASSISTANCE INFORMATIQUE</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+    <!-- ####### MAIN CONTENT ####### -->
     <main>
-        <!-- ####### MAIN CONTENT ####### -->
-        <!-- ####### 1 SECTION # ACCUEIL & NEWS ####### -->
+        <!-- ####### 2. SECTION # ACCUEIL & NEWS ####### -->
         <a name="a_accueil-news"></a>
         <section>
             <div class="row">
                 <div class="col-sm-12 h600px">
                     <h1>NEWS</h1>
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                </div>
-                <div class="col-sm-12 text-right">
-                    <a href="#a_top">
-                        <button class="btnup"><i class="fa fa-level-up fa-2x"></i></button>
-                    </a>
+                        <!-- ####### BLOCK NEWS####### -->
+                        <div class="row">                          
+                            <div class="col-sm-4">
+                                <li>
+                                    <div class="card_news_main">
+                                        <div class="card_image card">
+                                            <img class="image_news" src="img/cyclisme.jpeg">
+                                        </div>   
+                                        <div class="card_news">
+                                            <div class="news_padding">
+                                                <h4>Lorem Ipsum</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio provident deleniti ipsam, error ad cum odio, molestiae recusandae minima deserunt facere facilis voluptatum! Nostrum atque, a molestiae deserunt ut obcaecati!</p>
+                                            </div>
+                                            <div class="card_news_link">
+                                                <span>01 Mars 2018</span>
+                                                <a href="news.html">
+                                                    <h5>Sport</h5>
+                                                </a>
+                                            </div>    
+                                        </div>
+                                    </div>        
+                                </li>    
+                            </div>
+                            <div class="col-sm-4">
+                                <li>
+                                    <div class="card_news_main">
+                                        <div class="card_image card">
+                                            <img class="image_news" src="img/energy.jpg">
+                                        </div>
+                                        <div class="card_news">
+                                            <div class="news_padding">
+                                                <h4>Lorem Ipsum</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nam, ad dolorum consectetur mollitia. Aut eius sed voluptate tenetur, repellendus nobis consectetur cum aliquam quidem explicabo ad, consequatur facere eveniet!</p>
+                                            </div>    
+                                            <div class="card_news_link">
+                                                <span>01 Mars 2018</span>
+                                                <a href="news.html">
+                                                    <h5>Energie</h5>
+                                                </a>
+                                            </div>    
+                                        </div>    
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="col-sm-4">
+                                <li>
+                                    <div class="card_news_main">
+                                        <div class="card_image card">
+                                            <img class="image_news" src="img/flower.jpg">
+                                        </div>
+                                        <div class="card_news">
+                                            <div class="news_padding">
+                                                <h4>Lorem Ipsum</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit maiores nesciunt aut reiciendis nobis blanditiis repudiandae esse qui expedita temporibus quaerat saepe, amet a sequi itaque, odit quisquam, ipsam laboriosam.</p>
+                                            </div>    
+                                            <div class="card_news_link">
+                                                <span>01 Mars 2018</span>
+                                                <a href="news.html">
+                                                    <h5>Produit</h5>
+                                                </a>
+                                            </div>    
+                                        </div> 
+                                    </div>       
+                                </li>
+                            </div>                                      
+                        </div>           
+                        <!-- ####### END BLOCK NEWS ####### -->
                 </div>
             </div>
         </section>
-        <!-- ####### 2 SECTION # PORTAIL RAGT ####### -->
+        <!--####### 2. END SECTION NEWS####### -->
+        <!-- ####### 3. SECTION # PORTAL RAGT ####### -->
         <a name="a_portail-ragt"></a>
         <section>
             <div class="row">
                 <div class="col-sm-12 h600px">
                     <h1>PORTAIL RAGT</h1>
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                </div>
-                <div class="col-sm-12 text-right">
-                    <a href="#a_top">
-                        <button class="btnup"><i class="fa fa-level-up fa-2x"></i></button>
-                    </a>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <a href="http://www.ragt.fr">
+                                    <div class="card_image">
+                                        <img src="img/portal/01_ragt.jpg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        RAGT SA
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <a href="https://ragt-semences.fr">
+                                    <div class="card_image">
+                                        <img src="img/portal/02_semence.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        RAGT SEMENCES
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <a href="http://www.ragtjardinmaison.fr">
+                                    <div class="card_image">
+                                        <img src="img/portal/03_jem.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        RAGT JARDIN &amp; MAISON
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <a href="http://www.ragt-energie.fr">
+                                    <div class="card_image">
+                                        <img src="img/portal/04_energie.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        RAGT ENERGIE
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <a href="http://www.ragtplateaucentral.fr">
+                                    <div class="card_image">
+                                        <img src="img/portal/05_plateau.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        RAGT PLATEAU CENTRAL
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <a href="http://ceragt.portailce.com">
+                                    <div class="card_image">
+                                        <img src="img/portal/06_ce.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        <i class="fa fa-key"></i> &nbsp; PORTAIL CE
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- ####### 3. SECTION # SIEGE SOCIAL ####### -->
+        <!-- ####### 4. SECTION # SIEGE SOCIAL ####### -->
         <a name="a_siege-social-bourran"></a>
         <section>
             <div class="row">
                 <div class="col-sm-12 h600px">
                     <h1>SIEGE SOCIAL - BOURRAN</h1>
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img">
+                                        <img class="card_image" src="img/head-quarters/hq_1.jpg" alt="">
+                                    </div>
+                                    <div class="card_text">
+                                        La vie à Bourran
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img">
+                                        <img class="card_image" src="img/head-quarters/hq_2.jpg" alt="">
+                                    </div>
+                                    <div class="card_text">
+                                        Annuaire
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img">
+                                        <img class="card_image" src="img/head-quarters/hq_3.jpg" alt="">
+                                    </div>
+                                    <div class="card_text">
+                                        Intervention sur Bourran
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="img">
+                                        <img class="card_image" src="img/head-quarters/hq_4.jpg" alt="">
+                                    </div>
+                                    <div class="card_text">
+                                        L'Esprit Sport
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 text-right">
-                    <a href="#a_top">
-                        <button class="btnup"><i class="fa fa-level-up fa-2x"></i></button>
-                    </a>
-                </div>
-            </div>
         </section>
-        <!-- ####### 4. SECTION # COMMUNICATION IRP ####### -->
+        <!-- ####### 5. SECTION # COMMUNICATION IRP ####### -->
         <a name="a_communication-irp"></a>
         <section>
             <div class="row">
                 <div class="col-sm-12 h600px">
                     <h1>COMMUNICATION IRP</h1>
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                </div>
-                <div class="col-sm-12 text-right">
-                    <a href="#a_top">
-                        <button class="btnup"><i class="fa fa-level-up fa-2x"></i></button>
-                    </a>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/irp/01_compte-rendu.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        COMPTE RENDU CE
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/irp/02_syndicat.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        SYNDICAT
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/irp/03_portail-ce.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        PORTAIL CE
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- ####### 5. SECTION # RH - RESSOURCES HUMAINES ####### -->
+        <!-- ####### 6. SECTION # RH - RESSOURCES HUMAINES ####### -->
         <a name="a_rh-ressources-humaines"></a>
         <section>
             <div class="row">
                 <div class="col-sm-12 h600px">
                     <h1>RH - RESSOURCES HUMAINES</h1>
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                </div>
-                <div class="col-sm-12 text-right">
-                    <a href="#a_top">
-                        <button class="btnup"><i class="fa fa-level-up fa-2x"></i></button>
-                    </a>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/rh/01_rh.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        GESTION
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/rh/02_info.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        INFORMATION
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/rh/03_tromb.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        TROMBINOSCOPE
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- ####### 6. SECTION # DOCUMENTS / GED ####### -->
+        <!-- ####### 7. SECTION # DOCUMENTS / GED ####### -->
         <a name="a_documents-ged"></a>
         <section>
             <div class="row">
                 <div class="col-sm-12 h600px">
                     <h1>DOCUMENTS</h1>
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                    <!-- ######## CONTENT HERE ######### -->
-                </div>
-                <div class="col-sm-12 text-right">
-                    <a href="#a_top">
-                        <button class="btnup"><i class="fa fa-level-up fa-2x"></i></button>
-                    </a>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/ged/01_semences.jpeg" class="    link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        SEMENCES
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/ged/02_plateau-central.jpg" class="link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        PLATEAU CENTRALE
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/ged/03_juridique.jpg" class="link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        JURIDIQUE
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <a href="#">
+                                    <div class="card_image">
+                                        <img src="img/ged/04_ged.jpeg" class="link_image">
+                                    </div>
+                                    <div class="card_text">
+                                        GED
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <!-- ####### END OF MAIN CONTENT ####### -->
-    <!-- ####### 9. FOOTER ####### -->
+    <!-- ####### 8. FOOTER ####### -->
     <a name="a_footer"></a>
     <footer>
         <div class="row">
             <div class="col-sm-4">
                 <p>FOOTER</p>
             </div>
-
             <div class="col-sm-4">
                 <p>&nbsp;</p>
             </div>
-
             <div class="col-sm-4">
                 <p><a href="#">site plan</a></p>
             </div>
         </div>
     </footer>
     <!-- ####### JAVASCRIPTS ####### -->
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="node_modules/underscore/underscore-min.js"></script>
-    <!--     <script type="text/javascript" src="node_modules/ajax/lib/ajax.js"></script> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 
